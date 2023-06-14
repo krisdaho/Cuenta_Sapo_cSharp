@@ -40,12 +40,15 @@
             <RadioButton Name="TXR_Dos" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.514,-1.557" FontSize="14" Margin="96,51,0,0" GroupName="TurnosPorRonda"/>
             <RadioButton Name="TXR_Uno" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.514,-1.557" FontSize="14" Margin="28,51,0,0" GroupName="TurnosPorRonda"/>
             <Label Content="Elige la cantidad de turnos por ronda" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,22,0,0"/>
+            <DataGrid Name="tablaMain" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="425,-86,24,38" SelectedCellsChanged="tablaMain_SelectedCellsChanged"/>
         </Grid>
 
         <Button Content="INICIAR JUEGO" HorizontalAlignment="Left" Margin="291,404,0,0" VerticalAlignment="Top" FontSize="16" Height="41" Width="134" Click="Button_Click"/>
-        <ListBox Name="miListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="484,138,118,106" />
+        <ListBox Name="miListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="484,138,118,234" />
         <Label Content="Lista de jugadores" HorizontalAlignment="Left" Margin="484,94,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Image HorizontalAlignment="Left" Height="64" Margin="242,10,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.5,0.594" Source="/img_sapo.jpg"/>
 
+        
+        
     </Grid>
 </Window>

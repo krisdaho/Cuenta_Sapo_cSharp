@@ -11,13 +11,18 @@
             Content="Cuenta Sapo" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" FontSize="36" Height="58"/>
         <Image 
             HorizontalAlignment="Left" Height="64" Margin="242,10,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.5,0.594" Source="/img_sapo.jpg"/>
-        <Label 
-            Content="Vamos a jugar!!!" HorizontalAlignment="Left" Margin="64,78,0,0" VerticalAlignment="Top" Height="39" Width="180" FontSize="18"/>
-        <DataGrid Margin="25,180,143,31">
-            <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
-            <DataGridTextColumn Header="Puntuacion" Binding="{Binding Puntuacion}"/>
+
+        <DataGrid Name="tablaJugadores" 
+                d:ItemsSource="{d:SampleData ItemCount=5}" Margin="30,183,46,28">
+
+
         </DataGrid>
-        
-        
+        <TextBox Name="Puntos_txt" HorizontalAlignment="Left" Margin="68,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Height="29" FontSize="14"/>
+        <Button Name="Agregar_Puntos" Content="Agregar" HorizontalAlignment="Left" Margin="242,112,0,0" VerticalAlignment="Top" Height="27" Width="74" FontSize="14" Click="Agregar_Puntos_Click"/>
+        <Label Content="Ingresa los puntos" HorizontalAlignment="Left" Margin="68,80,0,0" VerticalAlignment="Top" FontSize="14"/>
+
+
+
+
     </Grid>
 </Window>
